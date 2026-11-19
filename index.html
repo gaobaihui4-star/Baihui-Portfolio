@@ -4,10 +4,270 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baihui's personal website</title>
-    <link rel="stylesheet" href="./BaihuiGao-Web/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Baihui's personal website</h1>
+
+    <!-- ============ LEFT SIDEBAR (1/3) ============ -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <!-- Avatar: replace "assets/avatar.jpg" with your own image -->
+            <div class="avatar">
+                <img src="./assets/avatar.jpg" alt="Baihui Gao" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect fill=%22%23ccc%22 width=%22100%22 height=%22100%22/><text x=%2250%22 y=%2258%22 font-size=%2240%22 text-anchor=%22middle%22 fill=%22%23888%22>BG</text></svg>'">
+            </div>
+
+            <!-- Name & Title -->
+            <h1 class="name">Baihui Gao</h1>
+            <p class="title">Game Designer &amp; Artist</p>
+
+            <!-- Short Bio -->
+            <p class="bio">
+                I design and build games, and make art along the way.
+                Welcome to my portfolio.
+            </p>
+
+            <!-- Contact / Social Links -->
+            <ul class="contact">
+                <li>
+                    <span class="label">Email</span>
+                    <a href="mailto:gaobaihui4@gmail.com">gaobaihui4@gmail.com</a>
+                </li>
+                <li>
+                    <span class="label">itch.io</span>
+                    <a href="https://ningjuli019.itch.io" target="_blank" rel="noopener">ningjuli019.itch.io</a>
+                </li>
+                <li>
+                    <span class="label">CV</span>
+                    <a href="./assets/CV.pdf" target="_blank" rel="noopener">Download CV</a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- ============ RIGHT CONTENT (2/3) ============ -->
+    <main class="content">
+
+        <!-- Tab Navigation -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="projects">Projects</button>
+            <button class="tab-btn" data-tab="gamejams">Game Jams</button>
+            <button class="tab-btn" data-tab="artworks">Art Works</button>
+        </nav>
+
+        <!-- ===== PROJECTS ===== -->
+        <section class="tab-panel active" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="cards">
+
+                <!-- Project Card 1 -->
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/halfi.jpg" alt="Project 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Halfi</h3>
+                        <p class="card-desc">A 2D platformer where emotions become abilities.</p>
+                        <div class="card-links">
+                            <a href="./assets/halfi.pdf" target="_blank" class="btn btn-pdf">PDF</a>
+                            <a href="https://ningjuli019.itch.io/halfi" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/towerofbirds.jpg" alt="Project 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Tower of Birds</h3>
+                        <p class="card-desc">A portable escape room game about birds.</p>
+                        <div class="card-links">
+                            <a href="./assets/towerofbirds.pdf" target="_blank" class="btn btn-pdf">PDF</a>
+                            <a href="https://ningjuli019.itch.io/tower-of-birds" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card: Cat & Head -->
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/cat-head.jpg" alt="Cat & Head" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cat & Head</h3>
+                        <p class="card-desc">A dark comedy about a stray cat who discovers a talking human head.</p>
+                        <div class="card-links">
+                            <a href="./assets/cat-head.pdf" target="_blank" class="btn btn-pdf">PDF</a>
+                            <a href="https://ningjuli019.itch.io/cat-head" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card: Mountain Spirit -->
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/mountain-spirit.jpg" alt="Mountain Spirit" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mountain Spirit</h3>
+                        <p class="card-desc">An exploration project featuring a traditional Chinese fantasy environment.</p>
+                        <div class="card-links">
+
+                            <a href="https://www.youtube.com/watch?v=JYfo7s5tJj8" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Add more project cards by copying the block above -->
+
+            </div>
+        </section>
+
+        <!-- ===== GAME JAMS ===== -->
+        <section class="tab-panel" id="gamejams">
+            <h2 class="section-title">Game Jams</h2>
+            <div class="cards">
+
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/jam1.jpg" alt="Game Jam 1" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Pres.No Face?</h3>
+                        <p class="card-desc">A game about a faceless president who collects facial features to win an election. Created for Ludum Dare 58 Game Jam.</p>
+                        <div class="card-links">
+                            <a href="./assets/jam1.pdf" target="_blank" class="btn btn-pdf">PDF</a>
+                            <a href="https://ldjam.com/events/ludum-dare/58/pres-no-face" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-thumb">
+                        <img src="./assets/jam2.jpg" alt="Game Jam 2" onerror="this.style.display='none'">
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Dorm Manager</h3>
+                        <p class="card-desc">A game about helping creatures with different sensory abilities escape from a dormitory. Created for Ludum Dare 59 Game Jam.</p>
+                        <div class="card-links">
+                            <a href="./assets/jam2.pdf" target="_blank" class="btn btn-pdf">PDF</a>
+                            <a href="https://ldjam.com/events/ludum-dare/59/sia-sh59" target="_blank" rel="noopener" class="btn btn-link">Visit</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- ===== ART WORKS ===== -->
+        <section class="tab-panel" id="artworks">
+            <h2 class="section-title">Art Works</h2>
+
+            <!-- ===== ALBUM COVERS ===== -->
+            <div class="albums" id="album-list">
+
+                <button class="album" data-album="album-oc">
+                    <div class="album-cover">
+                        <img src="./assets/thumbs/oc1.jpg" data-full="./assets/oc1.jpg" alt="Original Character Design / Logo Design">
+                    </div>
+                    <h3 class="album-title">Original Character Design / Logo Design</h3>
+                    <p class="album-hint">Open album &rarr;</p>
+                </button>
+
+                <button class="album" data-album="album-illustration">
+                    <div class="album-cover">
+                        <img src="./assets/thumbs/ill1.jpg" data-full="./assets/ill1.jpg" alt="Illustration Commission">
+                    </div>
+                    <h3 class="album-title">Illustration Commission</h3>
+                    <p class="album-hint">Open album &rarr;</p>
+                </button>
+
+            </div>
+
+            <!-- ===== ALBUM: ORIGINAL CHARACTER DESIGN / LOGO DESIGN ===== -->
+            <div class="album-view" id="album-oc">
+                <button class="album-back">&larr; All albums</button>
+                <h3 class="album-heading">Original Character Design / Logo Design</h3>
+                <div class="gallery">
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/oc1.jpg" data-full="./assets/oc1.jpg" alt="Character Design 1" data-caption="Character Design 1">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/oc2.jpg" data-full="./assets/oc2.jpg" alt="Character Design 2" data-caption="Character Design 2">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/oc3.jpg" data-full="./assets/oc3.png" alt="Character Design 3" data-caption="Character Design 3">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/logo1.jpg" data-full="./assets/logo1.jpg" alt="Logo Design 1" data-caption="Logo Design 1">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/logo2.jpg" data-full="./assets/logo2.jpg" alt="Logo Design 2" data-caption="Logo Design 2">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/logo3.jpg" data-full="./assets/logo3.jpg" alt="Logo Design 3" data-caption="Logo Design 3">
+                    </figure>
+
+
+                    <!-- Add more images by copying a <figure> block above -->
+
+                </div>
+            </div>
+
+            <!-- ===== ALBUM: ILLUSTRATION COMMISSION ===== -->
+            <div class="album-view" id="album-illustration">
+                <button class="album-back">&larr; All albums</button>
+                <h3 class="album-heading">Illustration Commission</h3>
+                <div class="gallery">
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill1.jpg" data-full="./assets/ill1.jpg" alt="Illustration 1" data-caption="Illustration 1">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill2.jpg" data-full="./assets/ill2.jpg" alt="Illustration 2" data-caption="Illustration 2">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill3.jpg" data-full="./assets/ill3.jpg" alt="Illustration 3" data-caption="Illustration 3">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill4.jpg" data-full="./assets/ill4.jpg" alt="Illustration 4" data-caption="Illustration 4">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill5.jpg" data-full="./assets/ill5.jpg" alt="Illustration 5" data-caption="Illustration 5">
+                    </figure>
+
+                    <figure class="gallery-item">
+                        <img src="./assets/thumbs/ill6.jpg" data-full="./assets/ill6.png" alt="Illustration 6" data-caption="Illustration 6">
+                    </figure>
+
+                    <!-- Add more images by copying a <figure> block above -->
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== LIGHTBOX (Art Works) ===== -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Close">&times;</button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#10094;</button>
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+        <button class="lightbox-nav lightbox-next" aria-label="Next">&#10095;</button>
+    </div>
+
     <script src="./script.js"></script>
 </body>
 </html>
