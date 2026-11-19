@@ -273,14 +273,6 @@ img { max-width: 100%; display: block; }
     cursor: pointer;
     transition: all 0.2s;
 }
-.btn-pdf {
-    background-color: var(--accent);
-    color: #fff;
-}
-.btn-pdf:hover {
-    background-color: var(--hover);
-    color: #fff;
-}
 .btn-link {
     background-color: transparent;
     color: var(--accent);
